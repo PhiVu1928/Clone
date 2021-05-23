@@ -36,8 +36,7 @@
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
-            </CollectionView>
-            <Button Grid.Row="2" Text="PopupTest" BackgroundColor="Red" CornerRadius="10" Clicked="Button_Clicked"/>
+            </CollectionView>            
         </Grid>
     </ContentPage.Content>
 </ContentPage>
