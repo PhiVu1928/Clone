@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloneApp.Views.CartView"
+             xmlns:vm="clr-namespace:CloneApp.ViewModel"
+             Shell.TabBarIsVisible="False">
+    <ContentPage.BindingContext>
+        <vm:ViewCartViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid Padding="10" BackgroundColor="White" WidthRequest="100">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Your Cart" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Grid>
+                    <Label Text="{Binding TotalResult}" FontSize="16" TextColor="Black" FontAttributes="Bold"/>
+                    <Label Text="Result" FontSize="16" Margin="30,0" FontAttributes="Bold"/>
+                </Grid>
+            </StackLayout>
+            
+            <CollectionView Grid.Row="1"  ItemsSource="{Binding carts}" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <SwipeView>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding ProductImage}" Aspect="AspectFit" HeightRequest="150"/>
+                                    <StackLayout VerticalOptions="Center"
+                                             Margin="20,0"
+                                             Spacing="10">
+                                        <Label Text="{Binding ProductName}" TextColor="Black" FontSize="14" />
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Size:" TextColor="Black" FontAttributes="Bold" FontSize="14" />
+                                            <Label Text="{Binding ProductSize}" TextColor="#F34141" FontAttributes="Bold" FontSize="14" />
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Quantity:" TextColor="Black" FontAttributes="Bold" FontSize="14" />
+                                            <Label Text="{Binding ProductQuantity}" TextColor="#F34141" FontAttributes="Bold" FontSize="14" />
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Price:" TextColor="Black" FontAttributes="Bold" FontSize="14" />
+                                            <Label Text="{Binding ProductPrice, StringFormat='${0}  '}" TextColor="#f34141" FontAttributes="Bold" FontSize="14" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+
+                            </SwipeView>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <StackLayout Grid.Row="2" Orientation="Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Total:" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" TextColor="Black"/>
+                    <Label Text="{Binding Total,StringFormat='${0}'}" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" TextColor="#f34141" FontAttributes="Bold"/>
+                </StackLayout>
+                <Button Text="Checkout" BackgroundColor="#F34141" CornerRadius="10"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>  

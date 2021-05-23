@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloneApp.Views.ItemDetailPage"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"  
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             Shell.NavBarIsVisible="True"
+             Shell.TabBarIsVisible="False">
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+            PositionIn="Bottom"
+            PositionOut="Bottom"
+           
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True">
+        </animations:ScaleAnimation>
+    </pages:PopupPage.Animation>
+    <StackLayout VerticalOptions="EndAndExpand"
+                 HorizontalOptions="FillAndExpand">
+        <Frame CornerRadius="20" HeightRequest="750">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackLayout HeightRequest="375" WidthRequest="375" Orientation="Vertical" Margin="10,20">
+                    <ImageButton Source="https://icons-for-free.com/iconfiles/png/512/back+icon-1320183325782918247.png"
+                                 HorizontalOptions="StartAndExpand" BackgroundColor="WhiteSmoke"
+                                 HeightRequest="44" WidthRequest="44" CornerRadius="20" Clicked="ImageButton_Clicked"/>
+                    <Image Source="{Binding SelectedItems.Image}" Aspect="AspectFit" WidthRequest="300" HeightRequest="214"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1">
+                    <Frame BackgroundColor="#12121D0D"
+                       CornerRadius="20"
+                       Margin="0,-100,0,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding SelectedItems.Name}" TextColor="#12121D" FontSize="28" FontAttributes="Bold"/>
+                                <Picker x:Name="picker"
+                                    Title="Select a size"
+                                    TitleColor="Black"
+                                    ItemsSource="{Binding productSizes}"
+                                    ItemDisplayBinding="{Binding ItemSize}"
+                                    SelectedItem="{Binding SelectedSize, Mode=TwoWay}">
+
+                                </Picker>
+                            </StackLayout>
+                            <StackLayout Grid.Row="1" Margin="0,30,0,0">
+                                <Label Text="Information" FontSize="16" FontAttributes="Bold" TextColor="Black"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Price" FontSize="14" HorizontalOptions="Start" FontAttributes="Bold" VerticalOptions="Start"/>
+                                    <Label Text="{Binding SelectedItems.Price,StringFormat='${0}'}" FontSize="14" FontAttributes="Bold" VerticalOptions="End" TextColor="Black"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Style" FontSize="14" HorizontalOptions="Start" FontAttributes="Bold" VerticalOptions="Start"/>
+                                    <Label Text="{Binding SelectedItems.Style}" FontSize="14" FontAttributes="Bold"  VerticalOptions="End" TextColor="Black"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Colorway" FontSize="14" HorizontalOptions="Start" FontAttributes="Bold" VerticalOptions="Start"/>
+                                    <Label Text="{Binding SelectedItems.Colorway}" FontSize="14" FontAttributes="Bold" VerticalOptions="End" TextColor="Black"/>
+                                </StackLayout>
+                                <Grid Margin="0,10,0,0">
+                                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#F34141" CornerRadius="20" Command="{Binding AddToCartCommand}" />
+                                </Grid>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </Frame>
+    </StackLayout>    
+</pages:PopupPage>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:services="clr-namespace:CloneApp.Services"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:vm="clr-namespace:CloneApp.ViewModel"
+             x:Class="CloneApp.Views.CategoryView"
+             Shell.NavBarIsVisible="False">
+    
+    
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Orientation="Vertical">
+            <StackLayout Orientation="Vertical">
+                <ImageButton Source="https://icons-for-free.com/iconfiles/png/512/back+icon-1320183325782918247.png"
+                             HorizontalOptions="Start" BackgroundColor="WhiteSmoke"
+                             HeightRequest="44" CornerRadius="20" 
+                             Command="{Binding _BackAsync}" WidthRequest="44"/>
+                <Label Text="{Binding Name}" TextColor="black" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" FontFamily="Arial" FontSize="24"/>
+            </StackLayout>
+            <Grid>  
+                <Label Text="{Binding TotalItems}" TextColor="Black" FontAttributes="Bold" FontSize="12"/>
+                <Label Text="Result" Margin="30,0,0,0" FontAttributes="Bold" FontSize="12"/>
+            </Grid>
+        </StackLayout>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding ShoesItemsByCate}"
+                        HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"
+                        SelectionMode="Single"
+                        SelectionChanged="CollectionView_SelectionChanged">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="20"
+                                     VerticalItemSpacing="20" Span="2"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Frame BackgroundColor="White" HeightRequest="150"
+                                           WidthRequest="150" CornerRadius="10"
+                                           HasShadow="True">
+                                <Image Source="{Binding Image }" Aspect="AspectFit"/>
+                            </Frame>
+                            <Label Grid.Row="1" Text="{Binding Name}" TextColor="#12121d" FontSize="12"/>
+                            <Label Grid.Row="2" Text="{Binding Price, StringFormat='${0}'}" TextColor="#f34141" FontSize="14" FontAttributes="Bold"/>
+                        </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

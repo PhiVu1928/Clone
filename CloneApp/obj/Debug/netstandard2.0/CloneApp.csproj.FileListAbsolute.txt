@@ -1,0 +1,56 @@
+/Users/inmac/Projects/CloneApp/CloneApp/bin/Debug/netstandard2.0/CloneApp.deps.json
+/Users/inmac/Projects/CloneApp/CloneApp/bin/Debug/netstandard2.0/CloneApp.dll
+/Users/inmac/Projects/CloneApp/CloneApp/bin/Debug/netstandard2.0/ref/CloneApp.dll
+/Users/inmac/Projects/CloneApp/CloneApp/bin/Debug/netstandard2.0/CloneApp.pdb
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/AppShell.xaml.g.cs
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/Views/CategoryPage.xaml.g.cs
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/Views/Mainpage.xaml.g.cs
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/CloneApp.AssemblyInfoInputs.cache
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/CloneApp.AssemblyInfo.cs
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/CloneApp.csproj.CoreCompileInputs.cache
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/CloneApp.dll
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/ref/CloneApp.dll
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/CloneApp.pdb
+/Users/inmac/Projects/CloneApp/CloneApp/obj/Debug/netstandard2.0/CloneApp.csprojAssemblyReference.cache
+C:\Users\Vu\Desktop\CloneApp\CloneApp\bin\Debug\netstandard2.0\CloneApp.deps.json
+C:\Users\Vu\Desktop\CloneApp\CloneApp\bin\Debug\netstandard2.0\CloneApp.dll
+C:\Users\Vu\Desktop\CloneApp\CloneApp\bin\Debug\netstandard2.0\ref\CloneApp.dll
+C:\Users\Vu\Desktop\CloneApp\CloneApp\bin\Debug\netstandard2.0\CloneApp.pdb
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\CategoryPage.xaml.g.cs
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\Mainpage.xaml.g.cs
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.AssemblyInfoInputs.cache
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.AssemblyInfo.cs
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.csproj.CoreCompileInputs.cache
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.dll
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\ref\CloneApp.dll
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.pdb
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\CategoryView.xaml.g.cs
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.csprojAssemblyReference.cache
+C:\Users\Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\CartView.xaml.g.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\CartView.xaml.g.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\CategoryPage.xaml.g.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\CategoryView.xaml.g.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\Mainpage.xaml.g.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.AssemblyInfoInputs.cache
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.AssemblyInfo.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.csproj.CoreCompileInputs.cache
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.dll
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\ref\CloneApp.dll
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.pdb
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\bin\Debug\netstandard2.0\CloneApp.deps.json
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\bin\Debug\netstandard2.0\CloneApp.dll
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\bin\Debug\netstandard2.0\ref\CloneApp.dll
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\bin\Debug\netstandard2.0\CloneApp.pdb
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.csprojAssemblyReference.cache
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\Page2.xaml.g.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\SearchView.xaml.g.cs

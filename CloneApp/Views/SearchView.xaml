@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CloneApp.ViewModel"
+             x:Class="CloneApp.Views.SearchView">
+    <ContentPage.BindingContext>
+        <local:SearchViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Vertical">
+                <SearchBar Text="{Binding SearchString}"
+                           x:Name="SearchShoes"
+                           Placeholder="Search here..."
+                           SearchCommand="{Binding SearchCommand}"
+                           TextChanged="SearchShoes_TextChanged"/>                
+            </StackLayout>
+            <CollectionView Grid.Row="1" x:Name="ShoesList"
+                            SelectionMode="Single"
+                            SelectionChanged="ShoesList_SelectionChanged">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout HorizontalItemSpacing="20" VerticalItemSpacing="20" Orientation="Vertical"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <StackLayout Orientation="Horizontal" Margin="0,0,0,20" VerticalOptions="Center">
+                                <Image Source="{Binding Image}" Aspect="AspectFit" HeightRequest="100"/>
+                                <Label Text="{Binding Name}" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button Grid.Row="2" Text="PopupTest" BackgroundColor="Red" CornerRadius="10" Clicked="Button_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

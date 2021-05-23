@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:CloneApp.ViewModel"
+    xmlns:md="clr-namespace:CloneApp.Model"
+    x:Class="CloneApp.Views.Mainpage"
+    Shell.NavBarIsVisible="False">
+    
+    
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel></vm:MainPageViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid Padding="10" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="https://theme.zdassets.com/theme_assets/1318471/ce4afefb73ec4c9394234fe934a1a2d2200513da.png" Aspect="AspectFit" HeightRequest="75" WidthRequest="200"/>
+                <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Orientation="Horizontal">
+                    <ImageButton Source="https://icon-library.com/images/search-icon-jpg/search-icon-jpg-18.jpg" BackgroundColor="WhiteSmoke" 
+                                 Margin="0,10,0,15" Command="{Binding ViewSearchCommand}" HeightRequest="44" WidthRequest="44" 
+                                 HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"
+                                 CornerRadius="20" Aspect="AspectFit" />
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="" x:Name="CartTotal" FontSize="10" TextColor="#F34141" HorizontalOptions="EndAndExpand" Margin="0,0,0,-15"/>
+                        <ImageButton Source="https://cdn4.iconfinder.com/data/icons/shopping-21/64/shopping-01-512.png" BackgroundColor="WhiteSmoke" CornerRadius="30" 
+                                     Margin="0,0,0,15" Clicked="ImageButton_Clicked" HeightRequest="45" WidthRequest="45" 
+                                     HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Aspect="AspectFit"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" Margin="10,0,10,0" VerticalOptions="StartAndExpand">
+                <ScrollView HorizontalOptions="FillAndExpand" VerticalScrollBarVisibility="Never" >
+                    <Grid RowSpacing="10" HorizontalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <CarouselView ItemsSource="{ Binding Shoes}" HeightRequest="150">
+                            <CarouselView.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame WidthRequest="330"
+                                           Padding="10" Margin="10" CornerRadius="10"
+                                           HorizontalOptions="CenterAndExpand"
+                                           HasShadow="False" BackgroundColor="White">
+                                        <Image Source="{Binding Image}"
+                                               Aspect="AspectFit"></Image>
+                                        <!--<CarouselView ItemsSource="{Binding Shoes}"  HeightRequest="100" IsSwipeEnabled="True">
+                                            <CarouselView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid HorizontalOptions="FillAndExpand">
+                                                        <Image Source="{Binding Image}" Aspect="AspectFill"/>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </CarouselView.ItemTemplate>
+                                        </CarouselView>-->
+                                    </Frame>
+                                </DataTemplate>
+                            </CarouselView.ItemTemplate>
+                        </CarouselView>
+                        <Grid Grid.Row="1" Padding="10" Margin="0">
+                            <StackLayout HorizontalOptions="Start">
+                                <Label Text="Brands" FontAttributes="Bold"
+                                       FontFamily="ThemeFont" FontSize="20"/>
+                            </StackLayout>                            
+                                <CollectionView ItemsSource="{Binding Brands}"
+                                                Margin="0,30,0,0"
+                                                SelectionMode="Single" BackgroundColor="White" HeightRequest="80" 
+                                                VerticalScrollBarVisibility="Never">
+                                    <CollectionView.ItemsLayout>
+                                        <GridItemsLayout Orientation="Horizontal" VerticalItemSpacing="10" HorizontalItemSpacing="10" Span="1"/>
+                                    </CollectionView.ItemsLayout>
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Padding="10" BackgroundColor="White" WidthRequest="80" HeightRequest="80">                                                
+                                                <Image Aspect="AspectFit" Source="{Binding Image}" Margin="10"
+                                                       HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>                                                
+                                            </Grid>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                    <CollectionView.Footer>
+                                        <Grid HeightRequest="0"/>
+                                    </CollectionView.Footer>
+                                </CollectionView>
+                        </Grid>
+                        <Grid Grid.Row="2" Padding="10" Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <StackLayout HorizontalOptions="StartAndExpand" Margin="0,0,0,10"> 
+                                <Label Text="New Release" FontSize="20" FontAttributes="Bold" FontFamily="ThemeFont"/>
+                            </StackLayout>
+                            <CollectionView ItemsSource="{Binding shoesItems}"                                                                                      
+                                                Margin="0,30,0,0"
+                                                BackgroundColor="White" HeightRequest="250" 
+                                                VerticalScrollBarVisibility="Never"
+                                            SelectionChanged="CollectionView_SelectionChanged"
+                                            SelectionMode="Single">
+
+                                <CollectionView.ItemsLayout>
+                                    <GridItemsLayout Orientation="Horizontal" VerticalItemSpacing="10" HorizontalItemSpacing="10" Span="1"/>
+                                </CollectionView.ItemsLayout>
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid WidthRequest="240">
+                                            <Frame 
+                                                        CornerRadius="10" HasShadow="True"
+                                                        HorizontalOptions="CenterAndExpand" Margin="10">
+                                                <Grid Padding="0" BackgroundColor="White" HeightRequest="300" x:DataType="md:ShoesItems">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="*"/>
+                                                        <RowDefinition Height="Auto"/>
+                                                        <RowDefinition Height="Auto"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Image Aspect="AspectFit" Source="{Binding Image}" Margin="0,0,0,10" HeightRequest="130" WidthRequest="150"
+                                                            HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                                    <Label Grid.Row="1" Text="{Binding Name}" TextColor="Black" FontAttributes="Bold"
+                                                               FontFamily="ThemeFont" FontSize="10"
+                                                               HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"/>
+                                                    <Label Grid.Row="2" Text="{Binding Price, StringFormat='${0}'}" TextColor="Red" FontFamily="ThemeFont"
+                                                               VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
+                                                               FontAttributes="Bold" FontSize="10"/>
+                                                </Grid>
+                                            </Frame>
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                                <CollectionView.Footer>
+                                    <Grid HeightRequest="0"/>
+                                </CollectionView.Footer>
+                            </CollectionView>
+
+                        </Grid>
+                        <Grid Grid.Row="3" Padding="10" Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <StackLayout HorizontalOptions="StartAndExpand" Margin="0,0,0,10"> 
+                                <Label Text="Top 20 Picks" FontSize="20" FontAttributes="Bold" FontFamily="ThemeFont"/>
+                            </StackLayout>
+                            <CollectionView ItemsSource="{Binding shoesItemsTop}"                                                                                      
+                                            Margin="0,30,0,0"
+                                            BackgroundColor="White" HeightRequest="250" 
+                                            VerticalScrollBarVisibility="Never"
+                                            SelectionChanged="CollectionView_SelectionChanged"
+                                            SelectionMode="Single">
+
+                                <CollectionView.ItemsLayout>
+                                    <GridItemsLayout Orientation="Horizontal" VerticalItemSpacing="10" HorizontalItemSpacing="10" Span="1"/>
+                                </CollectionView.ItemsLayout>
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid WidthRequest="240">
+                                            <Frame 
+                                                        CornerRadius="10" HasShadow="True"
+                                                        HorizontalOptions="CenterAndExpand" Margin="10">
+                                                <Grid Padding="0" BackgroundColor="White" HeightRequest="300" x:DataType="md:ShoesItems">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="*"/>
+                                                        <RowDefinition Height="Auto"/>
+                                                        <RowDefinition Height="Auto"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Image Aspect="AspectFit" Source="{Binding Image}" Margin="0,0,0,10" HeightRequest="130" WidthRequest="150"
+                                                            HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                                    <Label Grid.Row="1" Text="{Binding Name}" TextColor="Black" FontAttributes="Bold"
+                                                               FontFamily="ThemeFont" FontSize="10"
+                                                               HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"/>
+                                                    <Label Grid.Row="2" Text="{Binding Price, StringFormat='${0}'}" TextColor="Red" FontFamily="ThemeFont"
+                                                               VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
+                                                               FontAttributes="Bold" FontSize="10"/>
+                                                </Grid>
+                                            </Frame>
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                                <CollectionView.Footer>
+                                    <Grid HeightRequest="0"/>
+                                </CollectionView.Footer>
+                            </CollectionView>
+                        </Grid>
+                    </Grid>
+                </ScrollView>
+            </Grid>            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
