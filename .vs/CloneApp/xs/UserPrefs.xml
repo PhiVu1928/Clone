@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{890B2CD9-207D-45D5-8B67-11CAED8B5542}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloneApp/Views/Mainpage.xaml">
+    <Files>
+      <File FileName="CloneApp/Views/CategoryPage.xaml" Line="17" Column="21" />
+      <File FileName="CloneApp/Views/Mainpage.xaml" Line="58" Column="142" />
+      <File FileName="CloneApp/AppShell.xaml" />
+      <File FileName="CloneApp/ViewModel/MainPageViewModel.cs" />
+      <File FileName="CloneApp/Model/Brands.cs" />
+      <File FileName="CloneApp.iOS/Main.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CloneApp" expanded="True">
+            <Node name="CloneApp" expanded="True">
+              <Node name="Model" expanded="True" />
+              <Node name="ViewModel" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="CategoryPage.xaml" expanded="True" />
+                <Node name="Mainpage.xaml" selected="True" />
+              </Node>
+            </Node>
+            <Node name="CloneApp.Android" expanded="True" />
+            <Node name="CloneApp.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CloneApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FC76D07D-0DE7-40AD-9821-2A702D1D902B" />
+  <MonoDevelop.Ide.ItemProperties.CloneApp.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
