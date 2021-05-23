@@ -11,7 +11,6 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackLayout Orientation="Vertical">
                 <SearchBar Text="{Binding SearchString}"
