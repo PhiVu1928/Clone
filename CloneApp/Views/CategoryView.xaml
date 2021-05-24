@@ -8,7 +8,7 @@
              Shell.NavBarIsVisible="False">
     
     
-    <Grid Padding="10">
+    <Grid Padding="4">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -31,8 +31,8 @@
                         SelectionMode="Single"
                         SelectionChanged="CollectionView_SelectionChanged">
             <CollectionView.ItemsLayout>
-                <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="20"
-                                     VerticalItemSpacing="20" Span="2"/>
+                <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="5"
+                                     VerticalItemSpacing="10" Span="2"/>
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -42,8 +42,8 @@
                                 <RowDefinition Height="auto"/>
                                 <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
-                            <Frame BackgroundColor="White" HeightRequest="150"
-                                           WidthRequest="150" CornerRadius="10"
+                            <Frame BackgroundColor="White" HeightRequest="100"
+                                           CornerRadius="10"
                                            HasShadow="True">
                                 <Image Source="{Binding Image }" Aspect="AspectFit"/>
                             </Frame>

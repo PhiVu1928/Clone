@@ -12,7 +12,7 @@
     <ContentPage.BindingContext>
         <local:CategoryPageViewModel/>
     </ContentPage.BindingContext>
-    <Grid Padding="10" RowSpacing="20">
+    <Grid RowSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -78,26 +78,26 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Grid Grid.Row="1" HeightRequest="746" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+        <Grid Grid.Row="1" Padding="4" HeightRequest="746"  VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
             <CollectionView ItemsSource="{Binding SshoesItems}"
                             HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"
                             SelectionMode="Single"
                             SelectionChanged="CollectionView_SelectionChanged_1">
                 <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical"  HorizontalItemSpacing="10"
+                    <GridItemsLayout Orientation="Vertical"  HorizontalItemSpacing="5"
                                      VerticalItemSpacing="10" Span="2"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="125"/>
                                 <RowDefinition Height="auto"/>
                                 <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
-                            <Frame BackgroundColor="White" HeightRequest="100"
-                                           WidthRequest="150" CornerRadius="10"
-                                           HasShadow="True">
+                            <Frame BackgroundColor="White"
+                                   WidthRequest="150" CornerRadius="10"
+                                   HasShadow="True">
                                 <Image Source="{Binding Image }" Aspect="AspectFit"/>
                             </Frame>
                             <Label Grid.Row="1" Text="{Binding Name}" TextColor="#12121d" FontSize="12"/>
