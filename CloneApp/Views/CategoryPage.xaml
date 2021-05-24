@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CloneApp.Views.CategoryPage"
     xmlns:local="clr-namespace:CloneApp.ViewModel"
-    xmlns:model="clr-namespace:CloneApp.Model"
     Shell.TabBarIsVisible="True"
     Shell.NavBarIsVisible="False"
     Title="Category">
