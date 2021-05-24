@@ -70,7 +70,7 @@
                             </StackLayout>                            
                                 <CollectionView ItemsSource="{Binding Brands}"
                                                 Margin="0,30,0,0"
-                                                SelectionMode="Single" BackgroundColor="White" HeightRequest="80" 
+                                                BackgroundColor="White" HeightRequest="80" 
                                                 VerticalScrollBarVisibility="Never">
                                     <CollectionView.ItemsLayout>
                                         <GridItemsLayout Orientation="Horizontal" VerticalItemSpacing="10" HorizontalItemSpacing="10" Span="1"/>

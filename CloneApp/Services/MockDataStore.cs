@@ -51,15 +51,9 @@ namespace CloneApp.Services
             };
             return Items;
         }
-        public static async Task<List<ShoesItems>> GetitemsAsync(int page , int pagesize)
+        public static async Task<List<ShoesItems>> GetItemsDelay(int time)
         {
-            await Task.Delay(2000);
-            var _items = new MockDataStore().Getshoes();
-            return _items.Skip(page * pagesize).Take(pagesize).ToList();
-        }
-        public static async Task<List<ShoesItems>> GetItemsDelay()
-        {
-            await Task.Delay(2000);
+            await Task.Delay(time);
             var items = new MockDataStore().Getshoes();
             return items.ToList();
         }

@@ -65,10 +65,10 @@ namespace CloneApp.ViewModel
             _BackAsync = new Command( async () => await BackAsync());
         }
 
-        public void GetShoesItemsByCate(int id)
+        public async void GetShoesItemsByCate(int id)
         {
             ShoesItemsByCate.Clear();
-            var data = new MockDataStore().Getshoes();
+            var data = await MockDataStore.GetItemsDelay(100);
             foreach(var item in data.Where(x => x.CateID == id))
             {
                 ShoesItemsByCate.Add(item);

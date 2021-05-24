@@ -88,10 +88,10 @@ namespace CloneApp.ViewModel
                 categories.Add(item);
             }
         }
-        public void GetItems()
+        public async void GetItems()
         {
             SshoesItems.Clear();
-            var data = new MockDataStore().Getshoes();
+            var data = await MockDataStore.GetItemsDelay(1000);
             foreach(var items in data)
             {
                 SshoesItems.Add(items);

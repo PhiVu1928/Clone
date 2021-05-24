@@ -27,6 +27,13 @@
                     <DataTemplate>
                         <StackLayout>
                             <SwipeView>
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Delete" 
+                                                   BackgroundColor="WhiteSmoke"
+                                                   Invoked="SwipeItem_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
                                 <StackLayout Orientation="Horizontal">
                                     <Image Source="{Binding ProductImage}" Aspect="AspectFit" HeightRequest="150"/>
                                     <StackLayout VerticalOptions="Center"
