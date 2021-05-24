@@ -9,14 +9,14 @@ namespace CloneApp.Services
 {
     public class MockDataStore
     {
-        public ObservableCollection<ShoesItems> Items { get; set; }
+        public List<ShoesItems> Items { get; set; }
         public MockDataStore()
         {
             Items = Getshoes();
         }
-        public ObservableCollection<ShoesItems> Getshoes()
+        public List<ShoesItems> Getshoes()
         {
-            Items = new ObservableCollection<ShoesItems>()
+            Items = new List<ShoesItems>()
             {
                 new ShoesItems { Id = Guid.NewGuid().ToString(), CateID = 1, Style = "dd0587 600" , Colorway = " varsity red/black/white", Name = "AIR JORDAN 5 RETRO 'RAGING BULL' 2021", Price = 222.00f, Image = "https://cdn.flightclub.com/1500/TEMPLATE/254938/1.jpg" },
                 new ShoesItems { Id = Guid.NewGuid().ToString(), CateID = 2, Style = "554724 074", Colorway = "black/university red/black/white",Name = "AIR JORDAN 1 MID 'BANNED'", Price = 200.00f, Image = "https://cdn.flightclub.com/1500/TEMPLATE/245237/1.jpg" },
@@ -51,6 +51,17 @@ namespace CloneApp.Services
             };
             return Items;
         }
-        
+        public static async Task<List<ShoesItems>> GetitemsAsync(int page , int pagesize)
+        {
+            await Task.Delay(2000);
+            var _items = new MockDataStore().Getshoes();
+            return _items.Skip(page * pagesize).Take(pagesize).ToList();
+        }
+        public static async Task<List<ShoesItems>> GetItemsDelay()
+        {
+            await Task.Delay(2000);
+            var items = new MockDataStore().Getshoes();
+            return items.ToList();
+        }
     }
 }
