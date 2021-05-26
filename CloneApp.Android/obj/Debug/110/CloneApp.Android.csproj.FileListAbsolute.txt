@@ -1162,3 +1162,5 @@ C:\Users\Phi Vu\Desktop\CloneApp\CloneApp.Android\obj\Debug\110\android\assets\R
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp.Android\obj\Debug\110\android\assets\Rg.Plugins.Popup.pdb
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp.Android\obj\Debug\110\android\src\crc643dd37f507f3d9710\PopupPageRenderer.java
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp.Android\obj\Debug\110\android\src\crc64fdbeeba101bd56dc\RgGestureDetectorListener.java
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp.Android\obj\Debug\110\android\assets\MvvmHelpers.dll
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp.Android\obj\Debug\110\android\assets\MvvmHelpers.pdb

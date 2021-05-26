@@ -41,5 +41,10 @@ namespace CloneApp.Views
 
             ((CollectionView)sender).SelectedItem = null;
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushPopupAsync(new Page2());
+        }
     }
 }

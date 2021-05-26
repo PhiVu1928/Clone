@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "rirFt4GLrccPDNQhkiDL3ApG5FUCX3GKh2JGnB4AzWgcnTsa53mlb+aQFIUdiI8C4WevR/wEu43sV1JaWiazPQ==",
+  "dgSpecHash": "Gmsa3FPYVFO3qrvC1W1RwDD9V0Lnh8vpY9/4osHuS7QNp8n+44G07KU7zNnwVG6RiQqgQ+8KUaQmB1eeetMOqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Phi Vu\\Desktop\\CloneApp\\CloneApp.iOS\\CloneApp.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Phi Vu\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
     "C:\\Users\\Phi Vu\\.nuget\\packages\\rg.plugins.popup\\2.0.0.11\\rg.plugins.popup.2.0.0.11.nupkg.sha512",
     "C:\\Users\\Phi Vu\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\Phi Vu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Phi Vu\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
     "C:\\Users\\Phi Vu\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"

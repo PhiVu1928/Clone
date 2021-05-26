@@ -81,7 +81,9 @@
             <CollectionView ItemsSource="{Binding SshoesItems}"
                             HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"
                             SelectionMode="Single"
-                            SelectionChanged="CollectionView_SelectionChanged_1">
+                            SelectionChanged="CollectionView_SelectionChanged_1"
+                            RemainingItemsThreshold="4"
+                            RemainingItemsThresholdReachedCommand="{Binding LoadMore}">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical"  HorizontalItemSpacing="5"
                                      VerticalItemSpacing="10" Span="2"/>
@@ -105,6 +107,10 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            <ActivityIndicator IsRunning="{Binding IsBusy}"
+                               Color="Black"
+                               HorizontalOptions="Center"
+                               VerticalOptions="End"/>
         </Grid>
     </Grid>
 </ContentPage>

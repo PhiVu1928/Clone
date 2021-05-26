@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "/NMvdQ8lRgOzwlmIwmEPsEweNRbHUJHmlx1CmDeTDOxgVsXf3R6W08aLeVGfxRA5A9mkkaF7J8wYYRRAtlhBdg==",
+  "dgSpecHash": "kuVc5FXMFWiM8WKhBJenjXNV8uj54UlVXLZcymmKI8TGc0QK1YnoAZp0epj5zxsCKNU31myuQvMSb+DEnHNB6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Phi Vu\\Desktop\\CloneApp\\CloneApp.Android\\CloneApp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Phi Vu\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
     "C:\\Users\\Phi Vu\\.nuget\\packages\\rg.plugins.popup\\2.0.0.11\\rg.plugins.popup.2.0.0.11.nupkg.sha512",
     "C:\\Users\\Phi Vu\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\Phi Vu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Phi Vu\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",

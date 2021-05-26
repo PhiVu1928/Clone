@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"CloneApp.Android.dll",
 		"CloneApp.dll",
 		"FormsViewGroup.dll",
+		"MvvmHelpers.dll",
 		"Rg.Plugins.Popup.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
