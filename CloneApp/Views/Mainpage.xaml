@@ -105,9 +105,8 @@
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
                                         <Grid WidthRequest="240">
-                                            <Frame 
-                                                        CornerRadius="10" HasShadow="True"
-                                                        HorizontalOptions="CenterAndExpand" Margin="10">
+                                            <Frame    CornerRadius="10" HasShadow="True"
+                                                      HorizontalOptions="CenterAndExpand" Margin="10">
                                                 <Grid Padding="0" BackgroundColor="White" HeightRequest="300" x:DataType="md:ShoesItems">
                                                     <Grid.RowDefinitions>
                                                         <RowDefinition Height="*"/>

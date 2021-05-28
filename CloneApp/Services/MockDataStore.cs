@@ -57,6 +57,11 @@ namespace CloneApp.Services
             var items = new MockDataStore().Getshoes();
             return items.ToList();
         }
-        
+        public static async Task<List<ShoesItems>> GetItemsByCate(int cateid)
+        {
+            await Task.Delay(0);
+            var items = new MockDataStore().Getshoes().Where(x => x.CateID == cateid);
+            return items.ToList();
+        }
     }
 }

@@ -20,24 +20,6 @@ namespace CloneApp.Views
         {
             base.OnAppearing();
         }
-
-       
-
-
-        public void picker_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(picker.SelectedIndex == -1)
-            {
-                DisplayAlert("Error", "You must to select a size", "Ok");
-            }
-            else
-            {
-                var selectedItem = picker.Items[picker.SelectedIndex];
-                DisplayAlert("Confirm", selectedItem, "Ok");
-
-            }
-        }
-
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopPopupAsync();

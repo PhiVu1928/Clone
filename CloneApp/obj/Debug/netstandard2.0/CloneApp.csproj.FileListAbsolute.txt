@@ -37,7 +37,6 @@ C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\CartView.xaml.g.cs
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\CategoryPage.xaml.g.cs
-C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\CategoryView.xaml.g.cs
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\Mainpage.xaml.g.cs
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.AssemblyInfoInputs.cache
@@ -54,3 +53,4 @@ C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\CloneApp.csprojAssemblyReference.cache
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\Page2.xaml.g.cs
 C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\SearchView.xaml.g.cs
+C:\Users\Phi Vu\Desktop\CloneApp\CloneApp\obj\Debug\netstandard2.0\Views\ItemsCategoryView.xaml.g.cs

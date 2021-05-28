@@ -20,14 +20,6 @@ namespace CloneApp.Views
             base.OnAppearing();
         }
 
-        async void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (!(e.CurrentSelection.FirstOrDefault() is Category category))
-                return;
-            await Navigation.PushModalAsync(new CategoryView(category));
-
-            ((CollectionView)sender).SelectedItem = null;
-        }
 
         async void CollectionView_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
@@ -62,6 +54,14 @@ namespace CloneApp.Views
             await Navigation.PushPopupAsync(new ItemDetailPage(shoesitems));
 
             ((CollectionView)sender).SelectedItem = null;
+        }
+
+        async void Brandss_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (!(e.CurrentSelection.FirstOrDefault() is Category category))
+                return;
+            var data = await MockDataStore.GetItemsByCate(category.CateID);
+            LstItems.ItemsSource = data;
         }
     }
 }

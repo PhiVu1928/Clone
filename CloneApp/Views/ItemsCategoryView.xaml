@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloneApp.Views.ItemsCategoryView"
+             xmlns:panke="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+
+    <StackLayout Margin="10,20">
+        <panke:PancakeView BackgroundColor="White"
+                           WidthRequest="150" CornerRadius="30"
+                           HeightRequest="235">
+            <panke:PancakeView.Shadow>
+                <panke:DropShadow Color="WhiteSmoke"/>
+            </panke:PancakeView.Shadow>
+            <Grid HorizontalOptions="Center"
+              VerticalOptions="Center" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="125"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Image Source="{Binding Image}" Aspect="AspectFit"/>
+                <Label Grid.Row="1" Text="{Binding Name}" TextColor="#12121d" FontSize="12"/>
+                <Label Grid.Row="2" Text="{Binding Price, StringFormat='${0}'}" TextColor="#f34141" FontSize="14" FontAttributes="Bold"/>
+            </Grid>
+        </panke:PancakeView>
+    </StackLayout>
+</ContentView>
