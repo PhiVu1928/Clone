@@ -6,7 +6,7 @@
 
     <StackLayout Margin="10,20">
         <panke:PancakeView BackgroundColor="White"
-                           WidthRequest="150" CornerRadius="30"
+                           WidthRequest="150" CornerRadius="20"
                            HeightRequest="235">
             <panke:PancakeView.Shadow>
                 <panke:DropShadow Color="WhiteSmoke"/>
@@ -19,7 +19,7 @@
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
                 <Image Source="{Binding Image}" Aspect="AspectFit"/>
-                <Label Grid.Row="1" Text="{Binding Name}" TextColor="#12121d" FontSize="12"/>
+                <Label Grid.Row="1" Text="{Binding Name}" TextColor="#12121d" FontSize="12" FontAttributes="Bold"/>
                 <Label Grid.Row="2" Text="{Binding Price, StringFormat='${0}'}" TextColor="#f34141" FontSize="14" FontAttributes="Bold"/>
             </Grid>
         </panke:PancakeView>

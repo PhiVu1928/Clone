@@ -83,7 +83,7 @@
             <ActivityIndicator IsRunning="{Binding IsBusy}"
                                Color="Black"
                                HorizontalOptions="Center"
-                               VerticalOptions="End"/>
+                               VerticalOptions="Center"/>
         </Grid>
     </Grid>
 </ContentPage>

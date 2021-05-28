@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:panke="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="CloneApp.App">
      <Application.Resources>
         <ResourceDictionary>
@@ -35,7 +36,7 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
-            <Style TargetType="Grid">
+            <Style TargetType="StackLayout">
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">

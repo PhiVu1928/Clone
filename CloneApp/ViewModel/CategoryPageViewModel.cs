@@ -14,7 +14,7 @@ namespace CloneApp.ViewModel
     {
         private int _TotalItems;
         private int page = 0;
-        private int pagesize = 10;
+        private int pagesize = 6;
         public Command LoadMore { get; set; }
         public ObservableRangeCollection<ShoesItems> SshoesItems { get; set; }
         public ObservableCollection<Category> categories { get; set; }
@@ -31,7 +31,7 @@ namespace CloneApp.ViewModel
             if (IsBusy)
                 return;
             IsBusy = true;
-            await Task.Delay(1000);
+            await Task.Delay(2000);
             SshoesItems.AddRange(SshoesItems.Skip(page * pagesize).Take(pagesize).ToList());
             pagesize += page;
             IsBusy = false;
@@ -58,7 +58,7 @@ namespace CloneApp.ViewModel
         public async void GetItems()
         {
             SshoesItems.Clear();
-            var data = await MockDataStore.GetItemsDelay(1000);
+            var data = await MockDataStore.GetItemsDelay(0);
             foreach (var items in data.Take(pagesize))
             {
                 SshoesItems.Add(items);
